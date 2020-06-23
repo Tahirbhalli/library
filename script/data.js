@@ -11,12 +11,21 @@ function create(param){
     td.innerText = param
     return td
 }
-var books = [new Book('javascript','Ghosh',10), new Book('css','Ghosh',10), new Book('html','Ghosh',10)]
+var books //;= [new Book('javascript','Ghosh',10), new Book('css','Ghosh',10), new Book('html','Ghosh',10)]
 function getbooks(){
-    
+    if (localStorage.getItem('books')===null)
+    {
+        console.log('yes')
+        books = [new Book('javascript','Ghosh',10), new Book('css','Ghosh',10), new Book('html','Ghosh',10)]
+    }
+    else{
+        books=JSON.parse(localStorage.getItem('books'))
+    }
+
     books.forEach(book => {
         addbook(book)
     });
+
 
 }
 function addbook(book){
@@ -31,6 +40,7 @@ function addbook(book){
 function add(title,author,price){
     console.log(title)
     books.push(new Book(title,author,price))
+    localStorage.setItem('books',JSON.stringify(books))
     addbook(new Book(title,author,price))
     document.getElementById('closebtn').click(true)
 }
