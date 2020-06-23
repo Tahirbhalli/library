@@ -1,28 +1,29 @@
 class Book{
-    constructor(title,author,price){
-        this.title=title
-        this.author=author
-        this.price=price
-    }
-
+    constructor(title, author, price){
+        this.title = title;
+        this.author = author;
+        this.price = price;
+    }    
 }
-book1=new Book('javascript','Ghosh',10)
-book2=new Book('css','Ghosh',10)
-book3=new Book('html','Ghosh',10)
-
 
 function create(param){
-    var td=document.createElement('td')
-    td.innerText=param
+    var td = document.createElement('td')
+    td.innerText = param
     return td
 }
 
 function getbooks(){
-    var tb=document.getElementById('books')
+    var tb = document.getElementById('books')
     // iterate the no of books we have
-    var row=document.createElement('tr')
-    tb.appendChild(row)
-    row.appendChild(create('asdjakdj'))
+    books = [new Book('javascript','Ghosh',10), new Book('css','Ghosh',10), new Book('html','Ghosh',10)]
 
+    books.forEach(book => {
+        var row = document.createElement('tr')
+        row.appendChild(create(book.title))
+        row.appendChild(create(book.author))
+        row.appendChild(create(book.price))
+        
+        tb.appendChild(row)
+    });
 
 }
