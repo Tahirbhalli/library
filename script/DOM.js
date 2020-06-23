@@ -1,6 +1,13 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
+function ctablebody() {
+  const b = document.createElement('tbody');
+  b.setAttribute('id', 'books');
+  const c = document.querySelector('table');
+  c.appendChild(b);
+}
+
 function addbook(book) {
   const td = document.getElementById('books');
   const row = document.createElement('tr');

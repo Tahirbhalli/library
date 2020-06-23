@@ -16,19 +16,9 @@ function btnclicked(btn, tbook) {
   });
   localStorage.setItem('books', JSON.stringify(books));
 }
-function removed(tbook) {
-  const newbooks = [];
-  books.forEach(book => {
-    if (book !== tbook) {
-      newbooks.push(book);
-    }
-  });
-  localStorage.setItem('books', JSON.stringify(newbooks));
-  window.location.reload();
-}
-
 // eslint-disable-next-line no-unused-vars
 function render() {
+  ctablebody();
   if (localStorage.getItem('books') === null) {
     books = [new Book('javascript', 'Ghosh', 10, 'Read'), new Book('css', 'Ghosh', 10, 'Read'), new Book('html', 'Ghosh', 10, 'Read')];
   } else {
@@ -39,6 +29,20 @@ function render() {
     addbook(book);
   });
 }
+function removed(tbook) {
+  const newbooks = [];
+  books.forEach(book => {
+    if (book !== tbook) {
+      newbooks.push(book);
+    }
+  });
+  localStorage.setItem('books', JSON.stringify(newbooks));
+  const b = document.getElementById('books');
+  b.remove();
+  render();
+  // window.location.reload();
+}
+
 
 // eslint-disable-next-line no-unused-vars
 function add(title, author, price) {
