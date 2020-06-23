@@ -12,7 +12,7 @@ This is a Simple Javascript project where we dynamically ad books and store in l
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/library/8c9911fcae9f35903e57a8a823efb23e818eb752/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/library/a29a5d1ad2092c17885019accd4d39be4fdd66b0/index.html)
 
 
 ## Authors
