@@ -11,19 +11,26 @@ function create(param){
     td.innerText = param
     return td
 }
-
+var books = [new Book('javascript','Ghosh',10), new Book('css','Ghosh',10), new Book('html','Ghosh',10)]
 function getbooks(){
-    var tb = document.getElementById('books')
-    // iterate the no of books we have
-    books = [new Book('javascript','Ghosh',10), new Book('css','Ghosh',10), new Book('html','Ghosh',10)]
-
+    
     books.forEach(book => {
-        var row = document.createElement('tr')
-        row.appendChild(create(book.title))
-        row.appendChild(create(book.author))
-        row.appendChild(create(book.price))
-        
-        tb.appendChild(row)
+        addbook(book)
     });
 
+}
+function addbook(book){
+    var td=document.getElementById('books')
+    let row=document.createElement('tr')
+    row.appendChild(create(book.title))
+    row.appendChild(create(book.author))
+    row.appendChild(create(book.price))
+    td.appendChild(row)
+
+}
+function add(title,author,price){
+    console.log(title)
+    books.push(new Book(title,author,price))
+    addbook(new Book(title,author,price))
+    document.getElementById('closebtn').click(true)
 }
