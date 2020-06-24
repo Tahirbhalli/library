@@ -46,7 +46,9 @@ function removed(tbook) {
 
 // eslint-disable-next-line no-unused-vars
 function add(title, author, price) {
-  books.push(new Book(title, author, price, 'Read'));
-  localStorage.setItem('books', JSON.stringify(books));
-  addbook(new Book(title, author, price, 'Read'));
+  if ((title != "") && (author != "") && (price != "")) {
+    books.push(new Book(title, author, price, 'Read'));
+    localStorage.setItem('books', JSON.stringify(books));
+    addbook(new Book(title, author, price, 'Read'));
+  }
 }
