@@ -7,7 +7,13 @@ function ctablebody() {
   const c = document.querySelector('table');
   c.appendChild(b);
 }
-
+function formValue() {
+  document.getElementById('closebtn').click();
+  const el = document.querySelectorAll('input');
+  el.forEach(element => {
+    element.value = null;
+  });
+}
 function addbook(book) {
   const td = document.getElementById('books');
   const row = document.createElement('tr');

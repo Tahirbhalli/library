@@ -34,7 +34,7 @@
           
                
                 <div class="modal-body mx-auto">
-                <form>
+                <form action="javascript:add(this)">
                     <div class="form-group">
                       <input type="text" id="title" required placeholder="Enter the title of book">
                     </div>
@@ -45,7 +45,7 @@
                       <input type="number" id="price" required min=0 placeholder="Enter Price">
                     </div>
                     <div class="form-group text-center">
-                      <button type="submit" class="btn btn-primary" onclick="add(document.getElementById('title').value,document.getElementById('author').value,document.getElementById('price').value)">Add</button>
+                      <button type="submit" class="btn btn-primary">Add</button>
                     </div>
                 </form>
                 </div>

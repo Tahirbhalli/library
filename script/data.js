@@ -40,15 +40,13 @@ function removed(tbook) {
   const b = document.getElementById('books');
   b.remove();
   render();
-  // window.location.reload();
 }
 
 
 // eslint-disable-next-line no-unused-vars
-function add(title, author, price) {
-  if ((title !== '') && (author !== '') && (price !== '')) {
-    books.push(new Book(title, author, price, 'Read'));
-    localStorage.setItem('books', JSON.stringify(books));
-    addbook(new Book(title, author, price, 'Read'));
-  }
+function add() {
+  books.push(new Book(this.title.value, this.author.value, this.price.value, 'Read'));
+  localStorage.setItem('books', JSON.stringify(books));
+  addbook(new Book(this.title.value, this.author.value, this.price.value, 'Read'));
+  formValue();
 }
