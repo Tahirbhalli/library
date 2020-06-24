@@ -12,17 +12,19 @@ This is a Simple Javascript project where we dynamically ad books and store in l
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/library/a29a5d1ad2092c17885019accd4d39be4fdd66b0/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/library/9858ef18f4ebc41cf38f8b63906d82bb71dbb5c4/index.html)
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Tirthajyoti Ghosh**
 
-- Github: [@tirthajyoti-ghosh](https://github.com/tirthajyoti-ghosh)
+- Github: [@Tirthajyoti Ghosh](https://github.com/tirthajyoti-ghosh)
+- Twitter: [@terrific_ghosh](https://twitter.com/terrific_ghosh)
+- Linkedin: [Tirthajyoti Ghosh](https://www.linkedin.com/in/tirthajyoti-ghosh/)
 
 
-👤 **Author2**
+👤 **Tahir Ahmad**
 
 - Github: [@tahirbhalli](https://github.com/tahirbhalli/)
 
