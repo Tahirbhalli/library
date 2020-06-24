@@ -12,7 +12,7 @@ This is a Simple Javascript project where we dynamically ad books and store in l
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/library/9858ef18f4ebc41cf38f8b63906d82bb71dbb5c4/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Tahirbhalli/library/d7e7cd061b0291b55d95162225a92dc073f81c45/index.html)
 
 
 ## Authors
@@ -27,6 +27,8 @@ This is a Simple Javascript project where we dynamically ad books and store in l
 👤 **Tahir Ahmad**
 
 - Github: [@tahirbhalli](https://github.com/tahirbhalli/)
+- Twitter: [@tahirbhalli](https://twitter.com/tahirbhalli)
+- Linkedin: [Tahir Ahmad](https://www.linkedin.com/in/tahirahmad16/)
 
 ## 🤝 Contributing
 
