@@ -1,6 +1,6 @@
 # Library
 
-![screenshot](./screenshot.png)
+![image](https://user-images.githubusercontent.com/57726348/85506098-554a8a80-b60d-11ea-8b61-7df295e85c3b.png)
 
 This is a Simple Javascript project where we dynamically ad books and store in localstorage.
 
